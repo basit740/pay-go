@@ -1,0 +1,25 @@
+.cta-button {
+	display: flex;
+	padding: 10px 16px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	color: var(--text-white, #fcfcfc);
+
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px; /* 155.556% */
+	border-radius: 8px;
+
+	background: var(--primary, #85c123);
+	transition: all 0.4s;
+	margin-top: 3.2rem;
+}
+
+.cta-button:hover {
+	background: var(
+		--gradient,
+		linear-gradient(11deg, #85c123 0.52%, #12d0b9 100%)
+	);
+}

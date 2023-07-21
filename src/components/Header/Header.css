@@ -1,2 +1,9 @@
 .header {
+	padding: 3.2rem 0 9.5rem 0;
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }

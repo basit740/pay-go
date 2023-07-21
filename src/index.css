@@ -6,3 +6,24 @@ html {
 	padding: 0;
 	margin: 0;
 }
+:root {
+	--primary-color: #85c123;
+}
+
+/* GENERIC STYLE */
+body {
+	font-family: 'Segoe UI-Regular';
+}
+button {
+	background: none;
+	cursor: pointer;
+	border: none;
+	display: inline-block;
+	transition: all 0.3s;
+}
+
+.container {
+	max-width: 1216px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
