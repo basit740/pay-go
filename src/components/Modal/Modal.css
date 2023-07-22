@@ -1,0 +1,31 @@
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: none;
+	z-index: 90;
+	overflow: hidden;
+}
+.modal.open {
+	display: block;
+}
+.modal__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 628px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 10px;
+	transition: all 0.4s ease-in-out;
+	opacity: 0;
+	z-index: 100;
+}
+.open .modal__content {
+	opacity: 1;
+}
