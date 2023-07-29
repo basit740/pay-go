@@ -1,0 +1,16 @@
+.speedometer {
+	position: relative;
+	max-width: 373px;
+	width: 100%;
+}
+.speedometer .svg {
+	width: 100%;
+}
+.speedometer__needle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	position: absolute;
+	transform: translate(-24%, -34%);
+}

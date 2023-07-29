@@ -4,11 +4,17 @@ const Index = ({ children, onClose, open }) => {
 	if (open) {
 		document.querySelector('body').style.overflow = 'hidden';
 	} else {
-		document.querySelector('body').style.overflow = 'auto';
+		document.querySelector('body').style.overflowY = 'auto';
 	}
+
+	const doNotClose = (event) => {
+		event.stopPropagation();
+	};
 	return (
-		<div className={`modal ${open ? 'open' : ''}`} onClick={onClose}>
-			<div className='modal__content'>{children}</div>
+		<div className={`modal ${open === true ? 'open' : ''}`} onClick={onClose}>
+			<div className='modal__content' onClick={doNotClose}>
+				{children}
+			</div>
 		</div>
 	);
 };

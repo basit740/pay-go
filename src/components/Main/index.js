@@ -14,6 +14,7 @@ const Main = () => {
 		<main className='main'>
 			<Modal open={openModal} onClose={(e) => setOpenModal(false)}>
 				<h1>Alert Modal here</h1>
+				<p>alert modal description</p>
 			</Modal>
 			<CallToAction onClick={handleCtaClick} />
 			<Features />

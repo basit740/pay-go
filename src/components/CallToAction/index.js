@@ -2,6 +2,7 @@ import React from 'react';
 import './CallToAction.css';
 import CtaTextItem from 'components/CtaTextItem';
 import CtaButton from 'components/CtaButton';
+import Barometer from '../Barometer';
 const CallToAction = ({ onClick }) => {
 	return (
 		<div className='cta'>
@@ -20,7 +21,8 @@ const CallToAction = ({ onClick }) => {
 						</div>
 					</div>
 					<div className='cta__img'>
-						<img src='/assets/imgs/charging-bar.png' alt='' />
+						{/* <img src='/assets/imgs/charging-bar.png' alt='' /> */}
+						<Barometer />
 					</div>
 				</div>
 			</div>
